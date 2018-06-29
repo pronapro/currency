@@ -3,36 +3,66 @@
 <head>
 	<title> curreny app using javascript</title>
 	<link rel="stylesheet" type="text/css" href="design.css">
+	
+	
+
 
 </head>
-<body>
+<body onload="load()" >
 	<div>
+		<nav class="navy"> 
+		<ul>
+			<li> <a href="#"> HOME </a></li>
+			<li> <a href="#">HELP </a></li>
+			<li> <a href="#">SEARCH </a></li>
+			<li> <a href="#">EXPLORE </a></li>
+			<li> <a href="#">STOCKMARKET </a></li>
+		</ul>
+		</nav>
+	</div>
+<div class="pageAll">
+	<div >
 		<h1>  Napro currency converter </h1>
 	</div>
+
+	<p id="pi"></p>
 	<div>
 		<div>
 			<label>Amount</label>
-			<input type="text" name=" amount">
+			<input type="text" oninput="conver()" name=" amount">
 		</div>
-		<div>
+		<div class="" >
 			<label>from</label>
-			<select> 
-				<option> dollar</option>
-					<option> pound</option>
+			<select id="from" onchange=""> 
+		
 			</select>
 		</div>
-		<div>
+		<div >
 			<label>To</label>
-			<select> 
-				<option> dollar</option>
-					<option> pound</option>
+			<select id="to" onchange=""> 
+		
 			</select>
 		</div>
-		<div>
+		<div class="clo">
 			<label>Final Amount</label>
 			<input type="text" name="famount">
 		</div>
 	</div>
-	<script type="text/javascript" src=""></script>
+	<button id="button1" onclick="conver()">submit</button>
+	<footer>
+		<section> 
+			<h1> about</h1> 
+			<p> i am nakiranda Proscovia, napro. mobile web specialist with google,corrently enrolled with udacity</p>
+			<p> Gal at tech event near you.</p>
+		</section>
+		<section> 
+			<h2>  HOBBIES</h2>
+			<P> data science,coding,talking about tech</P>
+		</section>
+	</footer>
+	<script type="text/javascript"  src="conry.js"></script>
+	
+	<script type="text/javascript" src="app/sw.js"></script>
+	</div>
 </body>
 </html>
