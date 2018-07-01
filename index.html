@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> curreny app using javascript</title>
-	<link rel="stylesheet" type="text/css" href="design.css">
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	  <meta name="description" content="currency converter that uses a free currency API">
+	  <meta name="author" content="Pro Napro">
+	  <link rel="manifest" href="manifest.json">
+	  <title> curreny app using javascript</title>
+	  <link rel="stylesheet" type="text/css" href="design.css">
 	
 	
 
 
 </head>
 <body onload="load()" >
+	
+<div class="pageAll">
+	<div  id="header">
+		<h1>  Napro currency converter </h1>
+	</div>
 	<div>
 		<nav class="navy"> 
 		<ul>
-			<li> <a href="#"> HOME </a></li>
+			<li> <a href="index.html"> HOME </a></li>
 			<li> <a href="#">HELP </a></li>
 			<li> <a href="#">SEARCH </a></li>
 			<li> <a href="#">EXPLORE </a></li>
@@ -20,16 +31,13 @@
 		</ul>
 		</nav>
 	</div>
-<div class="pageAll">
-	<div >
-		<h1>  Napro currency converter </h1>
-	</div>
+	
 
 	<p id="pi"></p>
 	<div>
 		<div>
 			<label>Amount</label>
-			<input type="text" oninput="conver()" name=" amount">
+			<input type="number"  name=" amount" id="amount" value="" placeholder="enter amount to convert">
 		</div>
 		<div class="" >
 			<label>from</label>
@@ -37,6 +45,46 @@
 		
 			</select>
 		</div>
+		<div >
+			<label>To</label>
+			<select id="to" onchange=""> 
+		
+			</select>
+		</div>
+		
+	</div>
+	<button id="button1" onclick="conver()">convert currency</button>
+	
+	<div id="res"> </div>
+	<div id="footer">
+	<footer >
+		
+			<h2> ABOUT</h2> 
+			<p> i am nakiranda Proscovia, napro. mobile web specialist with google,corrently enrolled with udacity</p>
+			<p> Gal at tech event near you.</p>
+		
+		
+			<h2>  HOBBIES</h2>
+			<P> data science,coding,talking about tech</P>
+		
+	</footer>
+	</div>
+	<script>
+if('serviceWorker' in navigator) {
+  navigator.serviceWorker
+           .register('/sw1.js',{scope : '/ALC/'})
+           .then(function() { console.log("Service Worker Registered"); });
+}
+</script>
+	<script type="text/javascript"  src="conry.js"></script>
+	
+	<script type="text/javascript" src="sw1.js"></script>
+
+	<script type="text/javascript" src="indb.js"></script>
+	
+	</div>
+</body>
+</html>
 		<div >
 			<label>To</label>
 			<select id="to" onchange=""> 
