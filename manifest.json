@@ -13,9 +13,9 @@
       "sizes": "284x284"
     }
   ],
-  "start_url": "/ALC/index.html",
+  "start_url": "/pronapro/currency/index.html",
   "background_color": "#3367D6",
   "display": "standalone",
-  "scope": "/maps/",
+  "scope": "/currency/",
   "theme_color": "#3367D6"
 }
