@@ -1,0 +1,21 @@
+{
+  "short_name": "currency",
+  "name": "napro currency converter",
+  "icons": [
+    {
+      "src": "icons-192.png",
+      "type": "image/png",
+      "sizes": "142x142"
+    },
+    {
+      "src": "icons-284.png",
+      "type": "image/png",
+      "sizes": "284x284"
+    }
+  ],
+  "start_url": "/ALC/index.html",
+  "background_color": "#3367D6",
+  "display": "standalone",
+  "scope": "/maps/",
+  "theme_color": "#3367D6"
+}
