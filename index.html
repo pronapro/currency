@@ -72,45 +72,17 @@
 	<script>
 if('serviceWorker' in navigator) {
   navigator.serviceWorker
-           .register('/sw1.js',{scope : '/ALC/'})
+           .register('/sw1.js',{scope : './'})
            .then(function() { console.log("Service Worker Registered"); });
 }
 </script>
 	<script type="text/javascript"  src="conry.js"></script>
 	
-	<script type="text/javascript" src="sw1.js"></script>
+	<script type="text/javascript" src="sw.js"></script>
 
 	<script type="text/javascript" src="indb.js"></script>
 	
 	</div>
 </body>
 </html>
-		<div >
-			<label>To</label>
-			<select id="to" onchange=""> 
 		
-			</select>
-		</div>
-		<div class="clo">
-			<label>Final Amount</label>
-			<input type="text" name="famount">
-		</div>
-	</div>
-	<button id="button1" onclick="conver()">submit</button>
-	<footer>
-		<section> 
-			<h1> about</h1> 
-			<p> i am nakiranda Proscovia, napro. mobile web specialist with google,corrently enrolled with udacity</p>
-			<p> Gal at tech event near you.</p>
-		</section>
-		<section> 
-			<h2>  HOBBIES</h2>
-			<P> data science,coding,talking about tech</P>
-		</section>
-	</footer>
-	<script type="text/javascript"  src="conry.js"></script>
-	
-	<script type="text/javascript" src="app/sw.js"></script>
-	</div>
-</body>
-</html>
